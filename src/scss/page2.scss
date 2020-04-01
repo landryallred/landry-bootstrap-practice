@@ -6,6 +6,9 @@
 // $link-hover-color: grey;
 // $font-family-sans-serif: "Helvetica Neue";
 
+// Import Bootstrap styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 .navbar {
   font-family: 'Blippo';
   .nav-link:hover {
@@ -17,7 +20,8 @@
 }
 
 .jumbotron {
-  background: #ffffff url(../img/pirate-ship.jpg) no-repeat right top;
+  background-image: url(../img/pirate-ship.jpg) no-repeat;
+  background-position: center;
   background-size: cover;
   height: 400px;
   .display-4 {
@@ -70,7 +74,5 @@ story {
   margin-bottom: 20px;
 }
 
-// Import Bootstrap styles
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
 // Import partials here
+@import "footer"
